@@ -1,0 +1,122 @@
+footer{
+    color: rgba(255, 255, 255, 1);
+    padding: 31px;
+    border-top: 1px solid rgba(139, 96, 236, 1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+
+    .left-footer {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+
+    }
+    .middle-footer{
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        max-width: 576px;
+        width: 100%;
+        height: auto;
+        color: rgb(255, 255, 255);
+
+    }
+    .img_footer {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .right-footer{
+        margin-top: 10px;
+    }
+
+    .up{
+        text-align: center;
+        margin-bottom: 5px;
+        width: 100%;
+        a{
+            color: rgba(139, 96, 236, 1);
+            text-decoration: none;
+        }
+    }
+
+}
+
+
+@media(max-width:1350px){
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 50px;
+
+        .left-footer {
+
+            img{
+                width: 90px !important;
+            }
+        }
+        .middle-footer{
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(max-width:750px){
+    footer{
+        padding: 20px;
+    }
+    .footer-container{
+        padding: 0px !important;
+
+    .middle-footer{
+        width: 100%;
+        font-size: 14px;
+        text-align: center !important;
+    }
+    .left-footer{
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+  }
+}
+
+@media(max-width:750px){
+    footer{
+        padding: 0px 0xp !important;
+        text-align: center !important;
+    .middle-footer{
+        width: 100%;
+    }
+  }
+}
+
+@media(max-width:400px){
+    .footer-container .middle-footer {
+        text-align: center;
+        font-size: 12px ;
+        width: 100%;
+    }
+    .right-footer {
+        h3{
+            font-size: 15px !important;
+        }
+    }
+
+}
+

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+nav{
+    display: flex;
+    z-index: 9999;
+
+ }
+ .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+ }
+ .nav-links{
+   display: flex;
+   justify-content: space-between;
+   
+
+ }
+ .nav-links li {
+    list-style: none;
+ }
+ .limiter {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+ }
+
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90px;
+    padding: 0 8% !important;
+    position: fixed;
+    z-index: 9999 !important;
+    width: 100%;
+    
+
+ }
+
+ .navlinks {
+   background-color: rgb(33, 33, 33);
+   list-style-type: none;
+    width: 48vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
+    padding-top: 4rem;
+    overflow-y: scroll;
+   scrollbar-width: none; /* firefox scroll*/
+    -ms-overflow-style: none; /* IE */
+    
+ }
+
+ 
+
+ header.black nav{
+    background: linear-gradient(112.32deg, #292929 -0.32%, #000000 118.77%);
+    backdrop-filter: blur(100px);    
+    min-height: 50px;
+    transition: all .90s ease-in-out;
+    
+ }
+ 
+ .navlinks::-webkit-scrollbar {
+   /* webkit scroll */
+   width:0;
+   height:0
+ }
+ 
+ .navitems {
+    padding: 1rem 1rem;
+    width: 180px;
+ }
+
+ li.navitems{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+ }
+
+ .navlinks .itemlinks{
+    font-family: 'Poppins';
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+   font-style: normal;
+
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #FFFFFF;
+ }
+
+ .contact-button{
+    border: 3px solid rgba(139, 96, 236, 1);       
+    border-radius: 50px !important;
+    width: 150px !important;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   height: 48px;
+   border-radius: 5px;
+}
+
+ 
+ .dropmenu {
+    list-style: none;
+    margin:0;
+    padding: 0;
+    width: 30%;
+    display: none;
+   
+ }
+ 
+ .navitems:hover > .dropmenu {
+    display: block;
+    
+ }
+ 
+ .dropitems {
+    text-align: left;
+    padding: 1rem;
+    width: 100%;
+ }
+ 
+ .logo {
+    flex-grow: 0px;
+    width: 100%;
+    cursor: pointer;
+    padding-top: 5px;
+    
+
+    img{
+      width: 80px;
+      height: 20px;
+   }
+
+ }
+
+ 
+ #burger {
+    z-index: 99;
+
+ }
+ 
+ .burgerlines {
+    border-bottom: 4px solid #fff;
+    height: 7px;
+    width: 25px;
+    cursor: pointer;
+
+ }
+ a{
+   transition: 0.3s ease;
+ }
+
+ .active{
+   transform: translateX(0%) !important;
+
+ }
+
+ .navitems > a:hover {
+   transform: scale(1.2);
+ }
+ 
+
+
+@media screen and (min-width:900px){
+     .navlinks{
+      background: transparent;
+   }
+}
+@media screen and (max-width:900px){
+    .navbar{
+        min-height: 50px;
+        padding: 0 10%;
+        
+    }
+}
+
+
+ @media screen and (min-width:900px){
+
+    .limiter {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        justify-content: center;
+    }
+    #burger {
+        display: none;
+    }
+ 
+    .navbar {
+        justify-content: center;
+        width: 100%;
+        position: fixed;
+        padding: 0 10%;
+    }
+ 
+    .navlinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        position: relative;
+        top: auto;
+        right: auto;
+        height: auto;
+        transform: translateX(0%);
+        overflow-y: visible;
+        padding: 0;
+    }
+ 
+    .dropmenu {
+        flex-direction: column;
+        position: absolute;
+        list-style: none;
+        margin:0;
+        padding: 0;
+        width: 30%;
+        display: none;
+        left:30%;
+        transform: translateX(-50%);
+    }
+    .navitems:hover > .dropmenu {
+        display: flex;
+    }
+    .dropitems {
+        text-align: center;
+        padding: 1rem;
+    }
+    .navitems {
+        padding: 1rem 0rem;
+        text-align: right;
+        
+        
+    }
+
+    li.navitems{
+       width: 140px;
+    }
+   }
+
+   @media screen and (max-width:500px){
+     
+      .logo {
+     
+         img{
+           width: 50px;
+           height: 15px;
+        }
+     
+      }
+     }
+   @media screen and (max-width:290px){
+     .logo a{
+        font-size: 14px;
+    }
+ }
+ 

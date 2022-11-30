@@ -1,0 +1,149 @@
+.services {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+
+    }
+
+    .glow2{
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 50%;
+    
+    }
+    .title-services{
+        margin-bottom: 20px;
+        text-align: center;
+        color: #ffffff;
+
+            h1{
+                font-size: 60px;
+                font-weight: 600;
+                color: rgba(255, 255, 255, 1);
+                font-family: 'brandon', sans-serif;
+            }
+            h2{
+
+                font-size: 20px;
+                font-weight: 500;
+                color: rgba(139, 96, 236, 1);
+                margin-bottom: 10px;
+                font-family: 'brandon', sans-serif;
+
+            }
+            p{
+                width: 679px;
+                font-size: 16px;
+                font-weight: 300;
+                color: rgba(255, 255, 255, 1);
+            }
+            
+    }
+
+      .services-box-container{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+      }
+
+    .box1{
+        padding: 0 20px;
+        margin: 0 20px;
+        width: calc(33% - 20px);
+        backdrop-filter: blur(5px);
+        width: auto;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+
+        h1{
+            color: rgba(255, 255, 255, 1);
+            margin-top: 20px;
+            font-family: 'brandon', sans-serif;
+            font-weight: 600;
+        }
+    }
+}
+
+
+@media(max-width:900px){
+    .services{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .box1{
+        font-size: 18px !important;
+        width: 300px !important;
+
+    }
+    .glow2{
+        display: none;
+    }
+}
+
+
+@media(max-width:830px){
+  .services{
+    padding-top: 100px !important;
+  }
+  .box1{
+    font-size: 17px !important;
+}
+}
+
+@media(max-width:660px){
+    .title-services{
+        h1{
+            font-size: 30px !important;
+        }
+        h2{
+            font-size: 20px !important;
+        }
+        p{
+            font-size: 14px !important;
+            width: 100% !important;
+        }
+    }
+  }
+
+@media(max-width:480px){
+    .services{
+      padding-top: 100px !important;
+    }
+    .box1{
+      font-size: 15px !important;
+      padding: 0px 0px;
+
+        img{
+            width: 80px !important;
+        }
+    }
+}
+
+  
